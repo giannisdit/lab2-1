@@ -46,6 +46,13 @@ main PROC
 	call	Crlf
 
 		; ASKISI 2
+	mov	eax,[array1+13*4]
+	mov	edx,OFFSET mAccessElement
+	call	WriteString
+	call	WriteInt
+	call	Crlf
+
+
 
 
 	exit
